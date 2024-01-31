@@ -1,0 +1,10 @@
+<!-- <p>chords!</p>
+<p *ngFor="let chord of chords">{{chord.key}} - {{chord.text}} - {{chord.degree}}</p> -->
+
+
+<div class="form-group">
+    <label for="chords">Chords</label>
+    <select class="form-control" id="chords" required>
+      <option *ngFor="let chord of chords" [value]="chord.key">{{chord.degreeText}} - {{chord.text}} - Notes: {{chord.first}}, {{chord.third}}, {{chord.fifth}}</option>
+    </select>
+  </div>

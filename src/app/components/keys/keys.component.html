@@ -1,0 +1,9 @@
+<!-- <p>keys!</p>
+<p *ngFor="let key of keys">{{key.text}}</p> -->
+
+<div class="form-group">
+    <label for="keys">Keys</label>
+    <select class="form-control" id="keys" required>
+      <option *ngFor="let key of keys" [value]="key.value">{{key.text}}: I - {{key.note1}}, II - {{key.note2}}, III - {{key.note3}}, IV - {{key.note4}}, V - {{key.note5}}, VI - {{key.note6}}, VII - {{key.note7}}</option>
+    </select>
+  </div>
